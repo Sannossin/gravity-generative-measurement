@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gravity as generative measurement</title>
+<meta name="description" content="A speculative dark-energy law (S3-L), one dated bet (mu0 = 4/3, Omega_m = 0.3123) judged by DESI and Euclid from 2027, and a pre-registered test record. Sandhya Nossin.">
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2a44;--muted:#5b6474;--accent:#2e6fbf;--warm:#d9902b;--card:#ffffff;--line:#e4e1d8}
+@media (prefers-color-scheme:dark){:root{--bg:#141a26;--fg:#e8ecf3;--muted:#a3acbb;--accent:#7fb0ee;--warm:#f0b25a;--card:#1c2433;--line:#2c3547}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:760px;margin:0 auto;padding:40px 16px 64px}
+h1,h2{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.2}
+h1{font-size:2.1rem;margin:.2em 0 .3em}
+h2{font-size:1.25rem;margin:2em 0 .5em;color:var(--accent)}
+.kicker{font:600 .8rem system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--warm)}
+.by{color:var(--muted);font-family:system-ui,sans-serif;font-size:.95rem}
+.note{background:var(--card);border-left:4px solid var(--warm);padding:12px 16px;margin:24px 0;font-size:.95rem}
+.bet{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 20px;margin:20px 0}
+.bet strong{color:var(--accent)}
+.formula{font-family:"Courier New",monospace;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 14px;overflow-x:auto;white-space:nowrap}
+img{max-width:100%;height:auto;border-radius:8px;background:#fff}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:6px}
+table{border-collapse:collapse;width:100%;font-size:.92rem;font-family:system-ui,sans-serif}
+td,th{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{color:var(--muted);font-weight:600}
+.table-wrap{overflow-x:auto}
+a{color:var(--accent)}
+.links a{display:inline-block;margin:4px 14px 4px 0;font-family:system-ui,sans-serif;font-weight:600}
+footer{margin-top:48px;color:var(--muted);font-size:.85rem;font-family:system-ui,sans-serif}
+</style>
+</head>
+<body>
+<main>
+<div class="kicker">Speculative physics · dark energy</div>
+<h1>Gravity as generative measurement</h1>
+<div class="by">Sandhya Nossin · version 5.3 · 14 November 2026</div>
+
+<div class="note">I am not a physicist. The ideas are mine; the formalization, the calculations and the reviews were done with the help of an AI assistant (Claude, Anthropic), which is not a co-author. The calculations were checked by other instances of the same AI, which is not an independent review. Comments and refutations from physicists are very welcome.</div>
+
+<h2>A dark-energy law with no extra parameter</h2>
+<p>The essay proposes that a fraction of the Hubble horizon is progressively "inscribed":</p>
+<p class="formula">f = 1 − exp[ −μ0 (H0/H)³ ]</p>
+<p>and that each inscription weighs when it is made, then dilutes as 1/a. This law, S3-L, has a single constant, μ0, which replaces Ω<sub>Λ</sub>: for the expansion history it has exactly as many parameters as the standard model. Fitted to DESI DR2 and Planck, μ0 = 1.305 ± 0.016. The form of the law is posed, not derived, and was chosen after seeing the data. Against ΛCDM it gives a weak preference, not a win.</p>
+
+<h2>One bet, judged from 2027</h2>
+<div class="bet">
+<p><strong>μ0 = 4/3 exactly.</strong> With the counting convention of the interpretation (a cell is a Planck area, one unit of information per four cells) and the hypothesis that our horizon reaches the size of the source today, the law has <em>no free parameter at all</em>. It then imposes <strong>Ω<sub>m</sub> = 0.3123</strong> and a precise shape of cosmic distances.</p>
+<p>It is compatible with current data (about 1.4σ). It is refuted if final DESI and Euclid find Ω<sub>m</sub> incompatible with 0.3123 at more than 3σ. The convention was fixed while knowing the data: a fragile bet, not a derivation.</p>
+</div>
+<figure>
+<img src="s3l_bet.png" alt="Left: the dark-energy equation of state w(z) of S3-L with mu0 = 4/3, equal to about -0.82 today and crossing -1 near z = 0.45. Right: D_M/D_H of S3-L relative to a flat LCDM with Omega_m = 0.303, from +1 % near z = 0.3 to about -1.5 % near z = 1.5.">
+<figcaption>S3-L with μ0 = 4/3. Left: equation of state w(z). Right: the distance ratio D<sub>M</sub>/D<sub>H</sub> compared with a flat ΛCDM (Ω<sub>m</sub> = 0.303), background only. Reproduce it with <code>s3l_check.py</code>.</figcaption>
+</figure>
+
+<h2>Where it stands</h2>
+<div class="table-wrap"><table>
+<tr><th>Point</th><th>Status</th></tr>
+<tr><td>Weak point: S8</td><td>Predicted 0.850 (frozen); DES Y6 measures 0.789 ± 0.012, already below the refutation threshold 0.798 set in advance. Euclid decides in 2027.</td></tr>
+<tr><td>Inflation</td><td>Starobinsky with the retained reheating (chosen after the fact): n<sub>s</sub> = 0.9618, r = 0.0042, about 4σ below ACT DR6 for n<sub>s</sub>.</td></tr>
+<tr><td>Laboratory</td><td>A classical gravity that records: no gravitationally induced entanglement (BMV experiments).</td></tr>
+<tr><td>Open track</td><td>(M/M<sub>P</sub>)³ = v/M<sub>P</sub> links the scalaron mass, the Higgs vacuum value and the Planck mass, giving G at 0.89–0.92 of its measured value. One form out of about twenty falls in the window (chance 7–15 %): undecided.</td></tr>
+</table></div>
+
+<h2>Method</h2>
+<p>Every test (numbered 1 to 440) is pre-registered: expected results are written and fingerprinted (sha256, freeze time) before the code runs, and failures are published alongside successes, in a separate document of discarded leads.</p>
+
+<h2>Read, check, criticize</h2>
+<p class="links">
+<a href="https://doi.org/10.5281/zenodo.24226342">Short note, 3 pages (Zenodo)</a>
+<a href="https://doi.org/10.5281/zenodo.23422750">Essay and full archive (Zenodo)</a>
+<a href="https://github.com/NOM-DU-COMPTE/gravity-generative-measurement">Code and predictions (GitHub)</a>
+</p>
+<p>The reference text is the short essay in French; an English short paper is in the same deposit.</p>
+
+<footer>Contact: sandhya.nos@proton.me · Texts CC BY 4.0, code MIT.</footer>
+</main>
+</body>
+</html>

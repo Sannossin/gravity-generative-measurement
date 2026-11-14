@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you refer to this work, please cite the Zenodo deposit."
+title: "La gravité comme mesure générative — Énergie sombre et gravité qui enregistre"
+version: "5.3"
+date-released: 2026-11-14
+doi: 10.5281/zenodo.23422750
+authors:
+  - family-names: Nossin
+    given-names: Sandhya
+    email: sandhya.nos@proton.me
+type: software
+url: "https://doi.org/10.5281/zenodo.23422750"
+references:
+  - type: article
+    title: "A one-parameter dark-energy law and a parameter-free bet: Omega_m = 0.3123 for final DESI and Euclid"
+    authors:
+      - family-names: Nossin
+        given-names: Sandhya
+    doi: 10.5281/zenodo.24226342
+    year: 2026
