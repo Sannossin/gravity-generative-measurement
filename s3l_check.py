@@ -1,4 +1,4 @@
-"""Quick check of the S3-L dark-energy law (Nossin, "Gravity as generative measurement", v5.3).
+"""Quick check of the S3-L dark-energy law (Nossin, "Gravity as generative measurement", v5.4).
 
 S3-L: the inscribed fraction of the Hubble horizon is
     f = 1 - exp[-mu0 (H0/H)^3],
